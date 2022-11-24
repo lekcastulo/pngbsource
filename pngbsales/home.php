@@ -91,7 +91,13 @@
 
           <center><h2> Sales Report </h2></center>
 
-          <!-- <?php echo date('Y-m-d'); ?> -->
+          <!-- <?php 
+                  // echo date('Y-m-d');
+                  echo date('Y/m/d H:i:s');  
+                  // echo date_format(date,"Y/m/d H:i:s");
+          ?> -->
+
+          
         
 <!-- <center> <a href="timeInOut.php" class="btn btn-danger"> Time In/Out </a><br><br>
 
@@ -124,7 +130,7 @@
              
               <h3><b>Add Sale/s</b></h3>
 
-              <?php echo "<h2><font color='brown'> Today is <br><b>" . date(" \n l jS F Y") . "</b></font></h2><br>"; ?>
+              <?php echo "<h2><font color='brown'> Today is <br><b>" . date('Y-m-d') . "</b></font></h2><br>"; ?>
 
               <!-- <br> -->
 
@@ -327,8 +333,8 @@ function myFunction() {
 
 
 
-<a class="btn btn-primary" href="salesreport.php"> Review Your Sales (By Date)</a> <br><br>
-<a class="btn btn-primary" href="salesReportCollection.php"> Review Your Sales (By Official Receipt)</a> <br><br>
+<a class="btn btn-primary" href="salesreport.php"> Review Your Sales (Today)</a> <br><br>
+<!-- <a class="btn btn-primary" href="salesReportCollection.php"> Review Your Sales (By Official Receipt)</a> <br><br> -->
 <a class="btn btn-primary" href="editing.php"> Edit Request</a> <br><br/>
 <a class="btn btn-primary" href="deposits.php"> Deposits</a> <br>
 
