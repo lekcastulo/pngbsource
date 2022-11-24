@@ -6,6 +6,7 @@
 				public function TotalInventory($id, $dateFrom, $dateTo, $itemType){
 				require '../../connection.php';
 					
+				$date = date('Y-m-d');
 
 					if ($itemType == 'All') {
 
@@ -13,7 +14,7 @@
 						SELECT  date, item_value, id,SUM(grams) AS totalgrams, item_type, SUM(item_value) AS totalvalue, 
 						SUM(selling_price) AS totalsellingprice, SUM(item_value * grams) AS expectedprice
 						FROM sales_report
-						WHERE id IN ('$id') AND DATE BETWEEN '$dateFrom' AND '$dateTo'
+						WHERE id IN ('$id') and date = '$date'
 						GROUP BY item_type
 						ORDER BY DATE DESC");
 					}
@@ -24,7 +25,7 @@
 						SELECT  date, item_value, id,SUM(grams) AS totalgrams, item_type, SUM(item_value) AS totalvalue, 
 						SUM(selling_price) AS totalsellingprice, SUM(item_value * grams) AS expectedprice
 						FROM sales_report
-						WHERE id IN ('$id') AND item_id IN ('$itemType') AND DATE BETWEEN '$dateFrom' AND '$dateTo'
+						WHERE id IN ('$id') AND item_id IN ('$itemType') and date = '$date'
 						GROUP BY item_type
 						ORDER BY DATE DESC
 
