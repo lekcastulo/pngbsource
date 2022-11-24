@@ -67,7 +67,7 @@
 
 //		console.log(allfiles);
 
-		var inserprofit = '<b>Sales Profit<br> Php </b>'+numeral(allfiles).format('0,0.00');
+		var inserprofit = '<b>Sales Today<br> Php </b>'+numeral(allfiles).format('0,0.00');
 
 
 		$("h3[name=totalprofit]").html(inserprofit);
