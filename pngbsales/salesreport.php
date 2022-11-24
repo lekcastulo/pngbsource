@@ -181,7 +181,7 @@
               <center>
 
               <h3 name=totalprofit> </h3> 
-		<h3 name=totalshipping> </h3> 
+		<!-- <h3 name=totalshipping> </h3>  -->
               <!-- <h3 name=overallsales> </h3>  -->
               </center>
            </div>
