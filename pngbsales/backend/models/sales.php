@@ -3,15 +3,40 @@
 		class salesInventory {
 
 
+		
+
+
 				public function salesFilterInventory($itemType, $id, $dateFrom, $dateTo){
 				require '../../connection.php';
+
+	//old DB 			
+
+					// if ($itemType == 'All') {
+
+					// 	$query = mysqli_query($connection, "
+					// 	SELECT *
+					// 	FROM sales_report
+					// 	WHERE id IN ('$id') and Date between '$dateFrom' and '$dateTo'
+					// 	ORDER BY official_receipt DESC");
+					// }
+
+					// else {
+					// $query = mysqli_query($connection, "
+					// 	SELECT *
+					// 	FROM sales_report
+					// 	WHERE id IN ('$id') AND item_id IN ('$itemType') and Date between '$dateFrom' and '$dateTo'
+					// 	ORDER BY official_receipt DESC");
+					// }
+
+    //new db					
+					$date = date('Y-m-d');
 
 					if ($itemType == 'All') {
 
 						$query = mysqli_query($connection, "
 						SELECT *
 						FROM sales_report
-						WHERE id IN ('$id') and Date between '$dateFrom' and '$dateTo'
+						WHERE id IN ('$id') and date = '$date'
 						ORDER BY official_receipt DESC");
 					}
 
@@ -19,10 +44,10 @@
 					$query = mysqli_query($connection, "
 						SELECT *
 						FROM sales_report
-						WHERE id IN ('$id') AND item_id IN ('$itemType') and Date between '$dateFrom' and '$dateTo'
+						WHERE id IN ('$id') AND item_id IN ('$itemType') and date = '$date'
 						ORDER BY official_receipt DESC");
-					}
-					
+				}
+
 					$results = array();
 
 					// echo date('Y-m', strtotime('2017-06-17'));

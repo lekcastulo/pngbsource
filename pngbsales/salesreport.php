@@ -118,15 +118,15 @@
                 
                 <div class="input-daterange" id="datepicker" >
                    <label for="email">Date Range</label><br>
-                    <input type="text" class="input-small" name="dateFrom" placeholder="Date From" />
+                    <input type="hidden" class="input-small" name="dateFrom" placeholder="Date From" />
                     <span class="add-on" style="vertical-align: top;height:20px"> - </span>
 
-                    <input type="text" class="input-small" name="dateTo" placeholder="Date To" />
+                    <input type="hidden" class="input-small" name="dateTo" placeholder="Date To" />
                     <input type="hidden" name="id" value="<?php echo $member_id ?>" />
             
                     <br>
                     <br>
-                    <button type="submit" class="btn btn-custom" value="login" name="sum">Filter Date</button>
+                    <!-- <button type="submit" class="btn btn-success" value="login" name="sum">Filter </button> -->
                     
 
 
@@ -160,7 +160,7 @@
               </table>
 
               <div class="col-md-12">
-              <table class="table">
+              <!-- <table class="table">
                 <thead>
                   <tr style="text-align: center; color: orange;">
                     
@@ -174,7 +174,7 @@
                 </thead>
                 <tbody name="totalSales">
                 </tbody>
-              </table>
+              </table> -->
               </div>
 
               <br> 
