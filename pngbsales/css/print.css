@@ -1,0 +1,35 @@
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+    float: none;
+}
+
+.input-daterange, button,.jsgrid-filter-row, .btn, .userName, #success-message, #menu-item, .jsgrid-control-field  {
+    display: none !important;
+}
+
+.jsgrid-cell img {
+    width: 200px !important;
+    height: auto !important;
+}
+
+h3, .jsgrid-cell, .jsgrid-header-row .jsgrid-header-cell, #totalDeposits{
+    padding: 20px !important;
+    text-align: center;
+}
+
+.jsgrid-header-scrollbar,.jsgrid-grid-body { overflow: hidden !important; }
+
+.logo img {
+    width: 80px;
+}
+
+
+
+/*.jsgrid-header-row   {display: table-header-group !important;   } */
+
+tfoot   {display: table-footer-group !important;   }
+
+
+
+
