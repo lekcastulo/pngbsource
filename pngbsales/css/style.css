@@ -1,0 +1,59 @@
+body {
+	background-color: grey;
+}
+
+
+#header {
+
+	height: 130px;
+	background-color: black;
+}
+
+.logo h3{
+	color: grey;
+}
+
+
+.forLeft{
+
+	top: 350px;
+	padding-left: 2px !important;
+}.forRight{
+
+	top: 350px;
+	padding-right: 19px !important;
+
+}
+
+
+/* Remove margins and padding from the list, and add a black background color */
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+
+}
+
+/* Float the list items side by side */
+ul.topnav li { display: inline-block;}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {background-color: #ac2323;}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+
+
